@@ -7,6 +7,6 @@ class MvcConfig extends WebMvcConfigurerAdapter {
   void addResourceHandlers(final ResourceHandlerRegistry registry) {
     registry.addResourceHandler('/**')
         .addResourceLocations('classpath:/static')
-        .setCachePeriod(0)
+        .setCachePeriod(0) //disable cache
   }
 }
